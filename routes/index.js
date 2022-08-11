@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 // route for how old
+router.get('/howOld', controllers.index);
 
 
 
