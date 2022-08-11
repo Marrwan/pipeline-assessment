@@ -1,0 +1,33 @@
+{
+  "name": "pipeline-assessment",
+  "version": "1.0.0",
+  "description": "Build and deploy a very simple API that does the following",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marrwan/pipeline-assessment.git"
+  },
+  "keywords": [
+    "pipeline",
+    "nodejs",
+    "backend"
+  ],
+  "author": "Abdulbasit Damilola Alabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marrwan/pipeline-assessment/issues"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-rate-limit": "^6.5.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "homepage": "https://github.com/Marrwan/pipeline-assessment#readme"
+}
