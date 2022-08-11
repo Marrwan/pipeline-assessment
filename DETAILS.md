@@ -1,6 +1,5 @@
 <!-- Explain how this API (/howold/{dob}) can be used to Calculate and return the age of a person, given their date of birth (dob) as query parameters to GET /howold -->
 
-## How old is {name}?
 
 ### Query Parameters
 
@@ -14,6 +13,18 @@
 | ----------- | ----------- |
 | 200 | Success |
 
+## API Endpoints
+
+### GET / 
+    curl -X GET http://localhost:3000/
+
+### GET /howold
+
+    curl -X GET "http://localhost:3000/howold?dob=01-01-1980"
+
+    curl -X GET "http://localhost:3000/howold?dob=01-01-1980" -H "Content-Type: application/json" -d '{"dob": "01-01-1980"}'
+
+
 ## Example Request
 
 ```bash
@@ -24,10 +35,18 @@ curl -X GET http://localhost:3000/howold?dob=01-01-1990
 
 ```json
 {
-  "age": 27
+    "status": "success",
+    "age": 23
 }
 ```
 
-[]: # Language: javascript
-[]: # Path: app.js
-[]: # Path: DETAILS.md
+# Example Error Response
+    
+    ```json
+    {
+        "status": "error",
+        "message": "Invalid date of birth"
+    }
+    ```
+
+
