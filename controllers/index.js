@@ -11,7 +11,7 @@
 
                     if (!dob) {
                             res.status(400).json({status: 'error', message:'provide a date of birth'});
-                        } else if (dob.length < 6 || dob.length > 10) {
+                        } else if (dob.length < 6 ) {
                     return res.status(400).json({ status: 'error', message: 'Date of birth is not in the correct format' });
                 } 
                 const age = await calculateAge(dob);
