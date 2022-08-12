@@ -17,6 +17,12 @@ exports.index = async (req, res) => {
         message: "Date of birth is not in the correct format",
       });
     }
+    // Check if dob is not a javascript date object format
+    if(!dob.match(/^\d{1,2}-\d{1,2}-\d{4}$/)) {
+        return res.send('Date of birth is not in the correct format');
+    }
+
+
     const age = await calculateAge(dob);
     if (age < 0) {
       return res
