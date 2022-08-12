@@ -1,7 +1,7 @@
 // import calculateAge and use it
 const calculateAge = require("../services/calculateAge");
 
-exports.index = async (req, res) => {
+exports.index = async (req, res, next) => {
     const dob = req.query.dob;
     // check if date in not input correctly formatted
     // if(!dob.match(/^\d{1,2}-\d{1,2}-\d{4}$/)) {
@@ -30,6 +30,7 @@ exports.index = async (req, res) => {
     }
   
     return res.status(200).json({ status: "success", age: age });
+    next();
   };
   
 
