@@ -18,7 +18,7 @@
             if (age < 0) {
                  return   res.status(400).json({status: 'error', message:'date of birth is in the future'});
                 } else {
-                  return  res.status(200).json({status: 'success', age: age})
+                res.status(200).json({status: 'success', age: age})
             }
         } catch (err) {
                 res.status(500).json({status: 'error', message: err.message})
