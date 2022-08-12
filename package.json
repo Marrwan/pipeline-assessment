@@ -4,7 +4,8 @@
   "description": "Build and deploy a very simple API that does the following",
   "main": "bin/www",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/www"
   },
   "repository": {
     "type": "git",
