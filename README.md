@@ -1,7 +1,7 @@
-# Backend Assessment
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a2c1f8f6b392498c808562fb23b200fa)](https://www.codacy.com/gh/Marrwan/pipeline-assessment/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Marrwan/pipeline-assessment&amp;utm_campaign=Badge_Grade)
 
+# Backend Assessment
 
 Build and deploy a very simple API that does the following
 
